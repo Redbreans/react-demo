@@ -1,0 +1,83 @@
+.container {
+  padding:30px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  p{
+    margin: 0;
+  }
+}
+.action{
+  box-shadow:0 0 15px rgba(0,0,0,.4);
+  background: white;
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  :global(.am-button),:global(.am-input-item){
+    width: 60%;
+  }
+}
+.goodsItem{
+  padding: 15px 20px;
+  display:flex;
+  background: white;
+}
+.infoBottom{
+  display: flex;
+  align-items: center;
+  :global(.am-list-item .am-input-control input){
+    text-align: center;
+    color: #3366FF;
+  }
+}
+.itemInfo{
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .infoTop{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    span:nth-child(2){
+      color: #3366FF;
+    }
+  }
+}
+.goods{
+  position: relative;
+  height: calc(100vh - 90px - 80px);
+  overflow-y: auto;
+}
+.totalDiv{
+  margin:5px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  background: white;
+  padding: 20px 15px;
+  >div:nth-child(1){
+    >div:nth-child(2){
+      color: rgba(0,0,0,.6);
+      margin-top: 5px;
+    }
+  }
+}
+.totalSmall{
+  color: #3366FF;
+}
+.total{
+  font-size: 25px;
+  font-weight: bold;
+  color: #3366FF;
+}
